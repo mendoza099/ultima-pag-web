@@ -1,0 +1,40 @@
+section.scroll-trigger-section {
+  width: 97vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+section.scroll-trigger-section:nth-of-type(2) {
+  background: #eee;
+}
+
+span.scroll-direction-indicator {
+  position: absolute;
+  display: block;
+  text-align: center;
+  font-size: 50px;
+  z-index: 2;
+  width: 50%;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: white;
+  top: calc(50vh - 56px);
+}
+
+span.scroll-direction-indicator.up {
+  right: 0;
+  top: 21vh;
+}
+
+span.scroll-direction-indicator.down {
+  left: 0;
+  top: 15vh;
+}
+
+div.scroll-box {
+  height: 1.2vh;
+  width: 48.93vw;
+  margin-bottom: -0.2vh;
+  background: #121212;
+  display: block;
+}

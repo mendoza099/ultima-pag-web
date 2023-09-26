@@ -1,0 +1,815 @@
+/*
+    home.css: This website contains selectors only used in home.css
+
+    All pages share the styles on index.css but you should create 
+    one more css for each page that will contain the selected used 
+    on that page only (the ones not reused in other pages).
+*/
+
+/*Start Global*/
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 12px;
+}
+body.hide-scroll::-webkit-scrollbar {
+  display: none;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+img {
+  max-width: 100%;
+}
+h2 {
+  font-family: "Satoshi", sans-serif;
+  font-size: 120px;
+  font-weight: normal;
+  margin: 0 0 -55px;
+}
+h1,
+h3 {
+  font-family: "Satoshi", sans-serif;
+  font-size: 47px;
+  font-weight: bold;
+  letter-spacing: 9.4px;
+  margin: 0 0 15px;
+}
+p {
+  color: #515151;
+  line-height: 27px;
+}
+.a-CTA {
+  color: black;
+  border-bottom: 2px solid;
+  padding-bottom: 4px;
+  letter-spacing: 1.5px;
+  font-size: 18px;
+}
+/*End Global*/
+
+/*Start Mutual*/
+p,
+.a-CTA,
+input,
+.header-primera-pagina .navigation-bar a,
+.copyright li,
+.contact .form form label,
+.contact .form form button {
+  font-family: "Satoshi", sans-serif;
+}
+.fa-asterisk,
+.a-CTA,
+h2,
+.header-primera-pagina .navigation-bar a:hover,
+.header-primera-pagina nav.active .navigation-bar a:hover,
+footer .social-media .links a:hover,
+.copyright .info li a,
+.copyright .CTA li a:hover {
+  color: black;
+}
+.header-primera-pagina nav .navigation-bar .underline,
+.header-primera-pagina .text .button button:hover,
+.contact .form form button:hover,
+.contact .text i:hover {
+  background-color: black;
+}
+.header-primera-pagina .navigation-bar ul li,
+.header-primera-pagina .text,
+.about-us .text,
+.reservation .text,
+.menu .box-model,
+.menu .text,
+.fixed-image .text,
+footer,
+.copyright,
+.contact .text i {
+  text-align: center;
+}
+.header-primera-pagina nav,
+.header-primera-pagina .navigation-bar ul,
+.about-us,
+.reservation,
+.about-us .image-container,
+.reservation .image-container,
+.menu,
+.menu .menu-image-container,
+footer .contact-container,
+.copyright ul,
+.contact {
+  display: flex;
+}
+.header-primera-pagina nav .toggle,
+.header-primera-pagina nav .toggle span,
+.header-primera-pagina .navigation-bar,
+.header-primera-pagina .navigation-bar ul,
+.menu .box-model .close,
+footer .social-media .links a,
+.copyright .CTA li a {
+  transition: 0.3s;
+}
+.header-primera-pagina,
+.header-primera-pagina nav .toggle span,
+.header-primera-pagina .navigation-bar a,
+.header-primera-pagina .text,
+.header-primera-pagina .text .arrow .left,
+.header-primera-pagina .text .arrow .right,
+.recipes,
+.menu .box-image-container,
+.fixed-image .text,
+.copyright,
+.copyright .arrow-up {
+  position: relative;
+}
+.header-primera-pagina nav .toggle,
+.header-primera-pagina .navigation-bar .underline,
+.header-primera-pagina .text .arrow .left:after,
+.header-primera-pagina .text .arrow .right:after,
+.header-primera-pagina .svg-down,
+.header-primera-pagina .arrow-down,
+.recipes .text,
+.menu .box-model .close,
+.menu .box-model .arrow .arrow-right,
+.menu .box-model .arrow .arrow-left,
+.menu .box-image-container .box-image,
+.copyright .svg-up {
+  position: absolute;
+}
+.recipes .text,
+.fixed-image .text,
+.menu .box-image-container,
+.menu .box-image-container .box-image {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.header-primera-pagina nav,
+.header-primera-pagina .navigation-bar a:hover .underline,
+.header-primera-pagina .navigation-bar li.active .underline,
+.menu .box-model,
+.menu .box-image-container,
+.menu .box-image-container .box-image {
+  width: 100%;
+}
+button,
+.dots > div,
+.header-primera-pagina nav .toggle,
+.header-primera-pagina .arrow-down,
+.menu .box-model .close,
+.menu .box-model .arrow .arrow-right,
+.menu .box-model .arrow .arrow-left,
+.menu .menu-image-container .image img,
+footer .newsletter i,
+.copyright .arrow-up {
+  cursor: pointer;
+}
+.dots .active,
+.header-primera-pagina nav.active,
+.header-primera-pagina nav.active .toggle.active span,
+.header-primera-pagina nav .toggle span,
+.header-primera-pagina .navigation-bar .underline,
+.header-primera-pagina .text .arrow .left,
+.header-primera-pagina .text .arrow .right,
+.header-primera-pagina .text .button button,
+.contact form button {
+  background-color: #fff;
+}
+h1,
+h3,
+.header-primera-pagina .navigation-bar a,
+.header-primera-pagina .text span,
+.menu .box-model .close:hover,
+footer .text h2,
+footer .text p,
+footer .social-media .links a,
+.contact .text i,
+.contact .form form button {
+  color: white;
+}
+.header-primera-pagina nav,
+.header-primera-pagina .navigation-bar.show,
+.header-primera-pagina .navigation-bar a:hover .underline,
+.header-primera-pagina .navigation-bar li.active .underline,
+.header-primera-pagina .text .arrow .left:after,
+.menu .box-model,
+.copyright .arrow-up {
+  left: 0;
+}
+.header-primera-pagina .text .arrow .left:after,
+.header-primera-pagina .text .arrow .right:after,
+.header-primera-pagina .text span,
+footer .social-media .links a,
+footer .newsletter i,
+.copyright .arrow-up,
+.contact .text i,
+.contact .form form label {
+  display: inline-block;
+}
+/*End Mutual*/
+
+/*Start Dots*/
+.dots {
+  position: fixed;
+  top: 50%;
+  right: 30px;
+  transform: translate(0, -50%);
+  z-index: 5;
+}
+.dots > div {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  z-index: 20;
+  margin-bottom: 10px;
+  border: 2px solid #fff;
+}
+.dots .black {
+  border-color: #000;
+}
+.dots .active.black {
+  background-color: #000;
+}
+/*End Dots*/
+
+/*Start Loader*/
+
+/*Start Home Page*/
+
+/*Start .header-primera-pagina*/
+.header-primera-pagina {
+  height: 97vh;
+  background-size: cover;
+  background-position: center bottom;
+  background-image: url("https://res.cloudinary.com/dwkb2dk5r/image/upload/v1686911035/alina-grubnyak-ZiQkhI7417A-unsplash_sdzazg.jpg");
+  padding: 20px 70px;
+}
+.header-primera-pagina nav {
+  position: fixed;
+  top: 0;
+  padding: 36px 36px 20px;
+  z-index: 20;
+}
+.header-primera-pagina nav .toggle {
+  display: none;
+  top: 26px;
+  left: 20px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  z-index: 21;
+}
+.header-primera-pagina nav .toggle:focus {
+  outline: none;
+}
+.header-primera-pagina nav.active .toggle span {
+  background-color: #000;
+}
+.header-primera-pagina nav .toggle.active {
+  left: 32%;
+}
+.header-primera-pagina nav .toggle.active .first {
+  top: 16px;
+  transform: rotate(-45deg);
+}
+.header-primera-pagina nav .toggle.active .last {
+  top: 0;
+  transform: rotate(45deg);
+}
+.header-primera-pagina nav .toggle .hide {
+  transition: 0s;
+  visibility: hidden;
+}
+.header-primera-pagina nav .toggle span {
+  display: block;
+  width: 30px;
+  height: 2px;
+  border-radius: 40px;
+}
+.header-primera-pagina nav .toggle span:not(:last-of-type) {
+  margin-bottom: 6px;
+}
+.header-primera-pagina nav .logo {
+  flex-basis: 56%;
+  padding-left: 50px;
+}
+.header-primera-pagina .navigation-bar.show {
+  width: 40%;
+}
+.header-primera-pagina .navigation-bar.show a {
+  color: #ccc !important;
+}
+.header-primera-pagina .navigation-bar.show a:hover {
+  color: #fff !important;
+}
+.header-primera-pagina .navigation-bar ul li {
+  flex: 1;
+  padding: 0 10px;
+}
+.header-primera-pagina .navigation-bar a {
+  text-decoration: none;
+  transition: all 0.5s;
+  font-size: 16px;
+}
+.header-primera-pagina nav.active .navigation-bar a {
+  color: #000;
+}
+.header-primera-pagina .navigation-bar .underline {
+  height: 2px;
+  width: 0;
+  left: 50%;
+  bottom: -4px;
+  transition: all 0.3s;
+  display: block;
+}
+.header-primera-pagina .text {
+  top: 24%;
+}
+.header-primera-pagina .text h1 {
+  margin-bottom: 0;
+}
+.header-primera-pagina .text .arrow .left,
+.header-primera-pagina .text .arrow .right {
+  height: 3px;
+  width: 100px;
+}
+.header-primera-pagina .text .arrow .left {
+  left: -4%;
+}
+.header-primera-pagina .text .arrow .right {
+  right: -4%;
+}
+.header-primera-pagina .text .arrow .left:after,
+.header-primera-pagina .text .arrow .right:after {
+  content: "";
+  border: 10px solid transparent;
+  border-left-color: #fff;
+  top: -8px;
+}
+.header-primera-pagina .text .arrow .right:after {
+  right: 0;
+  border-color: transparent #fff transparent transparent;
+}
+.header-primera-pagina .text .arrow .fa-asterisk {
+  vertical-align: super;
+}
+.header-primera-pagina .text span {
+  font-family: "Satoshi", sans-serif;
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+.header-primera-pagina .text .button button,
+.contact form button {
+  border: none;
+  padding: 9px 18px;
+  letter-spacing: 2.4px;
+  font-size: 12px;
+  font-family: source_sans_problack, sans-serif;
+  border-radius: 3px;
+}
+.header-primera-pagina .text .button button,
+.contact form button:focus {
+  outline: none;
+}
+.header-primera-pagina .svg-down {
+  bottom: 0;
+  left: 50%;
+  z-index: 5;
+  margin-left: -96px;
+  margin-bottom: -12px;
+  color: #fff;
+}
+.header-primera-pagina .arrow-down {
+  width: 70px;
+  height: 50px;
+  bottom: -10px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 10;
+  background: url("https://res.cloudinary.com/abdel-rahman-ali/image/upload/v1535988515/arrow-down.png")
+    no-repeat center;
+}
+/*End .header-primera-pagina*/
+
+/*Start About-Us*/
+.about-us,
+.reservation {
+  padding: 60px;
+}
+.about-us .text,
+.reservation .text {
+  flex: 50%;
+  padding: 40px 52px 0 0;
+}
+.about-us .text h3,
+.reservation .text h3 {
+  color: black;
+}
+.about-us .text .fa-asterisk,
+.reservation .text .fa-asterisk {
+  color: #9a9998;
+}
+.about-us .image-container,
+.reservation .image-container {
+  flex: 50%;
+}
+.about-us .image,
+.reservation .image {
+  margin-left: 20px;
+}
+/*End About-Us*/
+
+/*Start Recipes*/
+.recipes .image {
+  height: 350px;
+  background: url("https://res.cloudinary.com/dwkb2dk5r/image/upload/v1686916591/BeFunky-collage_qdqrbf.jpg")
+    fixed center;
+  background-size: cover;
+}
+/*End Recipes*/
+
+/*Start Menu*/
+
+.menu .box-model {
+  display: none;
+  position: fixed;
+  height: 100%;
+  top: 0;
+  z-index: 20;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.menu .box-model.active {
+  display: block;
+}
+.menu .box-model.active body {
+  overflow: hidden;
+}
+.menu .box-model .close {
+  color: #ccc;
+  right: 25px;
+  top: 10px;
+  z-index: 20;
+}
+.menu .box-model .arrow .arrow-right,
+.menu .box-model .arrow .arrow-left {
+  width: 40px;
+  height: 40px;
+  right: 20px;
+  top: 50%;
+  border-right: 2px solid #fff;
+  border-top: 2px solid #fff;
+  transform: rotate(45deg);
+  z-index: 20;
+}
+.menu .box-model .arrow .arrow-left {
+  left: 20px;
+  transform: rotate(-135deg);
+}
+.menu .box-image-container {
+  height: 100%;
+}
+.menu .box-image-container .box-image img.active {
+  animation: scale 0.5s;
+}
+@keyframes scale {
+  from {
+    transform: scale(0, 0);
+  }
+  to {
+    transform: scale(1, 1);
+  }
+}
+.menu .menu-image-container {
+  flex-wrap: wrap;
+  flex: 50%;
+}
+.menu .menu-image-container .image {
+  margin: 0 20px 20px 0;
+  flex: calc(50% - 40px);
+}
+.menu .text {
+  flex: 55%;
+  padding: 40px 0 0 62px;
+}
+.menu .text h3 {
+  color: #000;
+}
+.menu .text .fa-asterisk {
+  color: #9a9998;
+}
+/*End Menu*/
+
+/*Start fixed-image*/
+.fixed-image {
+  background: url("https://res.cloudinary.com/dwkb2dk5r/image/upload/v1687027746/nick-brunner-96wH9-hzdWY-unsplash_jr9ygn.jpg")
+    fixed bottom;
+  background-size: cover;
+  height: 400px;
+}
+/*End fixed-image*/
+
+.copyright {
+  padding: 15px 40px 30px;
+  background-color: #262526;
+}
+.copyright .svg-up {
+  top: 0;
+  left: 50%;
+  margin-left: -96px;
+  margin-top: -50px;
+}
+.copyright .arrow-up {
+  width: 40px;
+  height: 30px;
+  top: -45px;
+  color: #fff;
+  line-height: 1.9;
+}
+.copyright ul {
+  justify-content: center;
+}
+.copyright li {
+  color: #919191;
+  font-size: 14px;
+}
+.copyright li:not(:last-of-type):after {
+  content: "•";
+  margin: 10px;
+}
+.copyright .CTA {
+  margin-top: 25px;
+}
+.copyright .CTA li a {
+  color: #919191;
+}
+.card {
+  width: 400px;
+  height: 38vh;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 5px solid #7b8fa1;
+}
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card-body {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: -100%;
+  position: absolute;
+  background: #1f3d4738;
+  backdrop-filter: blur(5px);
+  color: #fff;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 2s;
+}
+
+.card:hover .card-body {
+  right: 0;
+}
+.card-titule {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 500;
+}
+.card-info {
+  font-size: 16px;
+  line-height: 25px;
+  margin: 15px 0;
+  font-weight: 400;
+}
+.card-btn {
+  color: #1f3d47;
+  background: #8fabba;
+  padding: 10px 20px;
+  width: 120px;
+  border-radius: 5px;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+/*End Footer*/
+
+/*End Home Page*/
+
+/*Start Contact Page*/
+.contact-.header-primera-pagina {
+  background-image: url("https://res.cloudinary.com/abdel-rahman-ali/image/upload/v1535988526/contact-food.jpg");
+  height: 40vh;
+}
+.contact {
+  padding: 78px 40px;
+}
+.contact > div {
+  flex: 50%;
+}
+.contact .text p {
+  margin-bottom: 30px;
+}
+.contact .text i {
+  width: 50px;
+  height: 50px;
+  background-color: #000;
+  border-radius: 50%;
+  line-height: 48px;
+  font-size: 24px;
+}
+.contact .text h2 {
+  font-family: source_sans_problack, sans-serif;
+  font-size: 24px;
+  color: #262626;
+  letter-spacing: 2.4px;
+  margin-bottom: 20px;
+}
+.contact .form {
+  margin-left: 48px;
+}
+.contact .form form label {
+  margin-bottom: 5px;
+  color: #515151;
+}
+.contact .form form input,
+.contact .form form textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 24px;
+  border-radius: 5px;
+  border: 2px solid #d8d8d8;
+  outline: none;
+}
+.contact .form form input:focus,
+.contact .form form textarea:focus {
+  border-color: #a96700;
+  box-shadow: 0 1px 1px #737373;
+}
+.contact .form form textarea {
+  height: 212px;
+  resize: none;
+}
+.contact .form form button {
+  background-color: #262526;
+  padding: 12px 30px;
+  font-size: 12px;
+}
+/*End Contact Page*/
+
+/*Start Home Page Responsive*/
+
+@media (max-width: 1200px) {
+  .menu,
+  .about-us,
+  .reservation {
+    padding: 60px 40px;
+  }
+  .about-us .text,
+  .reservation .text {
+    padding: 0 32px 0 0;
+  }
+  .about-us .image-container,
+  .reservation .image-container {
+    align-items: center;
+  }
+  .menu .text {
+    padding: 0 0 0 32px;
+  }
+}
+
+@media (max-width: 992px) {
+  body {
+    padding: 0;
+  }
+  .dots {
+    display: none;
+  }
+  .header-primera-pagina {
+    height: calc(100vh - 10px);
+  }
+  .header-primera-pagina nav .logo {
+    padding-left: 0;
+  }
+  .about-us {
+    display: block;
+    padding-top: 50px;
+  }
+  .about-us .text,
+  .reservation .text {
+    padding: 0 0 40px;
+  }
+  .about-us .image-container .image1,
+  .reservation .image-container .image1 {
+    margin-left: 0;
+  }
+  .menu {
+    display: block;
+    padding: 60px 20px 60px 40px;
+  }
+  .menu .text {
+    padding: 20px 20px 0 0;
+  }
+  .reservation {
+    display: block;
+    padding: 30px 20px 60px;
+  }
+  .contact {
+    display: block;
+    padding: 78px 20px;
+  }
+  .contact .form {
+    margin-left: 0;
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-primera-pagina nav {
+    display: block;
+    text-align: center;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding-top: 25px;
+  }
+  .header-primera-pagina nav .toggle {
+    display: block;
+  }
+  .header-primera-pagina .navigation-bar {
+    position: fixed;
+    top: 0;
+    left: -174px;
+    height: 100%;
+    background-color: #262526;
+    overflow: hidden;
+    z-index: 20;
+    padding: 40px;
+  }
+  .header-primera-pagina .navigation-bar ul {
+    display: block;
+    padding-top: 40px;
+  }
+  .header-primera-pagina .navigation-bar ul li {
+    text-align: left;
+    padding: 14px 0;
+  }
+  footer .contact-container {
+    display: block;
+  }
+  footer .social-media {
+    margin-bottom: 40px;
+  }
+  .copyright ul {
+    display: block;
+    margin-top: -20px;
+  }
+  .copyright li {
+    margin-bottom: 5px;
+  }
+  .copyright li:not(:last-of-type):after {
+    content: "";
+  }
+}
+
+@media (max-width: 576px) {
+  h3,
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 90px;
+  }
+  .header-primera-pagina {
+    padding: 0;
+  }
+  .header-primera-pagina nav .logo {
+    padding-left: 0;
+  }
+  .header-primera-pagina nav .toggle.active {
+    left: 36%;
+  }
+  .header-primera-pagina .navigation-bar.show {
+    padding: 20px;
+    width: 48%;
+  }
+  .about-us,
+  .reservation {
+    padding: 60px 20px;
+  }
+  .menu {
+    padding: 30px 0 30px 20px;
+  }
+}
+/*End Home Page Responsive*/

@@ -1,0 +1,739 @@
+/*
+    home.css: This website contains selectors only used in home.css
+
+    All pages share the styles on index.css but you should create 
+    one more css for each page that will contain the selected used 
+    on that page only (the ones not reused in other pages).
+*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+/*Start Global*/
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 12px;
+}
+body.hide-scroll::-webkit-scrollbar {
+  display: none;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+img {
+  max-width: 100%;
+}
+h2 {
+  font-family: "Satoshi", sans-serif;
+  font-size: 120px;
+  font-weight: normal;
+  margin: 0 0 -55px;
+}
+h1,
+h3 {
+  font-family: "Satoshi", sans-serif;
+  font-size: 47px;
+  font-weight: bold;
+  letter-spacing: 9.4px;
+  margin: 0 0 15px;
+}
+p {
+  color: #515151;
+  line-height: 27px;
+}
+.a-CTA {
+  color: black;
+  border-bottom: 2px solid;
+  padding-bottom: 4px;
+  letter-spacing: 1.5px;
+  font-size: 18px;
+}
+/*End Global*/
+
+/*Start Mutual*/
+p,
+.a-CTA,
+input,
+.header-segunda-pagina .navigation-bar a,
+.copyright li,
+.contact .form form label,
+.contact .form form button {
+  font-family: "Satoshi", sans-serif;
+}
+.fa-asterisk,
+.a-CTA,
+h2,
+.header-segunda-pagina .navigation-bar a:hover,
+.header-segunda-pagina nav.active .navigation-bar a:hover,
+footer .social-media .links a:hover,
+.copyright .info li a,
+.copyright .CTA li a:hover {
+  color: black;
+}
+.header-segunda-pagina nav .navigation-bar .underline,
+.header-segunda-pagina .text .button button:hover,
+.contact .form form button:hover,
+.contact .text i:hover {
+  background-color: black;
+}
+.header-segunda-pagina .navigation-bar ul li,
+.header-segunda-pagina .text,
+.about-us .text,
+.reservation .text,
+.menu .box-model,
+.menu .text,
+.fixed-image .text,
+footer,
+.copyright,
+.contact .text i {
+  text-align: center;
+}
+.header-segunda-pagina nav,
+.header-segunda-pagina .navigation-bar ul,
+.about-us,
+.reservation,
+.about-us .image-container,
+.reservation .image-container,
+.menu,
+.menu .menu-image-container,
+footer .contact-container,
+.copyright ul,
+.contact {
+  display: flex;
+}
+.header-segunda-pagina nav .toggle,
+.header-segunda-pagina nav .toggle span,
+.header-segunda-pagina .navigation-bar,
+.header-segunda-pagina .navigation-bar ul,
+.menu .box-model .close,
+footer .social-media .links a,
+.copyright .CTA li a {
+  transition: 0.3s;
+}
+.header-segunda-pagina,
+.header-segunda-pagina nav .toggle span,
+.header-segunda-pagina .navigation-bar a,
+.header-segunda-pagina .text,
+.header-segunda-pagina .text .arrow .left,
+.header-segunda-pagina .text .arrow .right,
+.fotosnoticias,
+.menu .box-image-container,
+.fixed-image .text,
+.copyright,
+.copyright .arrow-up {
+  position: relative;
+}
+.header-segunda-pagina nav .toggle,
+.header-segunda-pagina .navigation-bar .underline,
+.header-segunda-pagina .text .arrow .left:after,
+.header-segunda-pagina .text .arrow .right:after,
+.header-segunda-pagina .svg-down,
+.header-segunda-pagina .arrow-down,
+.fotosnoticias .text,
+.menu .box-model .close,
+.menu .box-model .arrow .arrow-right,
+.menu .box-model .arrow .arrow-left,
+.menu .box-image-container .box-image,
+.copyright .svg-up {
+  position: absolute;
+}
+.fotosnoticias .text,
+.fixed-image .text,
+.menu .box-image-container,
+.menu .box-image-container .box-image {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.header-segunda-pagina nav,
+.header-segunda-pagina .navigation-bar a:hover .underline,
+.header-segunda-pagina .navigation-bar li.active .underline,
+.menu .box-model,
+.menu .box-image-container,
+.menu .box-image-container .box-image {
+  width: 100%;
+}
+button,
+.dots > div,
+.header-segunda-pagina nav .toggle,
+.header-segunda-pagina .arrow-down,
+.menu .box-model .close,
+.menu .box-model .arrow .arrow-right,
+.menu .box-model .arrow .arrow-left,
+.menu .menu-image-container .image img,
+footer .newsletter i,
+.copyright .arrow-up {
+  cursor: pointer;
+}
+.dots .active,
+.header-segunda-pagina nav.active,
+.header-segunda-pagina nav.active .toggle.active span,
+.header-segunda-pagina nav .toggle span,
+.header-segunda-pagina .navigation-bar .underline,
+.header-segunda-pagina .text .arrow .left,
+.header-segunda-pagina .text .arrow .right,
+.header-segunda-pagina .text .button button,
+.contact form button {
+  background-color: #fff;
+}
+h1,
+h3,
+.header-segunda-pagina .navigation-bar a,
+.header-segunda-pagina .text span,
+.menu .box-model .close:hover,
+footer .text h2,
+footer .text p,
+footer .social-media .links a,
+.contact .text i,
+.contact .form form button {
+  color: white;
+}
+.header-segunda-pagina nav,
+.header-segunda-pagina .navigation-bar.show,
+.header-segunda-pagina .navigation-bar a:hover .underline,
+.header-segunda-pagina .navigation-bar li.active .underline,
+.header-segunda-pagina .text .arrow .left:after,
+.menu .box-model,
+.copyright .arrow-up {
+  left: 0;
+}
+.header-segunda-pagina .text .arrow .left:after,
+.header-segunda-pagina .text .arrow .right:after,
+.header-segunda-pagina .text span,
+footer .social-media .links a,
+footer .newsletter i,
+.copyright .arrow-up,
+.contact .text i,
+.contact .form form label {
+  display: inline-block;
+}
+/*End Mutual*/
+
+/*Start Dots*/
+.dots {
+  position: fixed;
+  top: 50%;
+  right: 30px;
+  transform: translate(0, -50%);
+  z-index: 5;
+}
+.dots > div {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  z-index: 20;
+  margin-bottom: 10px;
+  border: 2px solid #fff;
+}
+.dots .black {
+  border-color: #000;
+}
+.dots .active.black {
+  background-color: #000;
+}
+/*End Dots*/
+
+/*Start Home Page*/
+
+/*Start .header-segunda-pagina*/
+.header-segunda-pagina {
+  height: 97vh;
+  background-size: cover;
+  background-position: center;
+  background-image: url("https://res.cloudinary.com/dwkb2dk5r/image/upload/v1687338101/juliana-malta-Uy0Bq8vYjk4-unsplash_1_zjfuar.jpg");
+  padding: 20px 70px;
+}
+.header-segunda-pagina nav {
+  position: fixed;
+  top: 0;
+  padding: 36px 36px 20px;
+  z-index: 20;
+}
+.header-segunda-pagina nav .toggle {
+  display: none;
+  top: 26px;
+  left: 20px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  z-index: 21;
+}
+.header-segunda-pagina nav .toggle:focus {
+  outline: none;
+}
+.header-segunda-pagina nav.active .toggle span {
+  background-color: #000;
+}
+.header-segunda-pagina nav .toggle.active {
+  left: 32%;
+}
+.header-segunda-pagina nav .toggle.active .first {
+  top: 16px;
+  transform: rotate(-45deg);
+}
+.header-segunda-pagina nav .toggle.active .last {
+  top: 0;
+  transform: rotate(45deg);
+}
+.header-segunda-pagina nav .toggle .hide {
+  transition: 0s;
+  visibility: hidden;
+}
+.header-segunda-pagina nav .toggle span {
+  display: block;
+  width: 30px;
+  height: 2px;
+  border-radius: 40px;
+}
+.header-segunda-pagina nav .toggle span:not(:last-of-type) {
+  margin-bottom: 6px;
+}
+.header-segunda-pagina nav .logo {
+  flex-basis: 56%;
+  padding-left: 50px;
+}
+.header-segunda-pagina .navigation-bar.show {
+  width: 40%;
+}
+.header-segunda-pagina .navigation-bar.show a {
+  color: #ccc !important;
+}
+.header-segunda-pagina .navigation-bar.show a:hover {
+  color: #fff !important;
+}
+.header-segunda-pagina .navigation-bar ul li {
+  flex: 1;
+  padding: 0 10px;
+}
+.header-segunda-pagina .navigation-bar a {
+  text-decoration: none;
+  transition: all 0.5s;
+  font-size: 16px;
+}
+.header-segunda-pagina nav.active .navigation-bar a {
+  color: #000;
+}
+.header-segunda-pagina .navigation-bar .underline {
+  height: 2px;
+  width: 0;
+  left: 50%;
+  bottom: -4px;
+  transition: all 0.3s;
+  display: block;
+}
+.header-segunda-pagina .text {
+  top: 24%;
+}
+.header-segunda-pagina .text h1 {
+  margin-bottom: 0;
+}
+.header-segunda-pagina .text .arrow .left,
+.header-segunda-pagina .text .arrow .right {
+  height: 3px;
+  width: 100px;
+}
+.header-segunda-pagina .text .arrow .left {
+  left: -4%;
+}
+.header-segunda-pagina .text .arrow .right {
+  right: -4%;
+}
+.header-segunda-pagina .text .arrow .left:after,
+.header-segunda-pagina .text .arrow .right:after {
+  content: "";
+  border: 10px solid transparent;
+  border-left-color: #fff;
+  top: -8px;
+}
+.header-segunda-pagina .text .arrow .right:after {
+  right: 0;
+  border-color: transparent #fff transparent transparent;
+}
+.header-segunda-pagina .text .arrow .fa-asterisk {
+  vertical-align: super;
+}
+.header-segunda-pagina .text span {
+  font-family: "Source Code Pro", sans-serif;
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+.header-segunda-pagina .text .button button,
+.contact form button {
+  border: none;
+  padding: 9px 18px;
+  letter-spacing: 2.4px;
+  font-size: 12px;
+  font-family: source_sans_problack, sans-serif;
+  border-radius: 3px;
+}
+.header-segunda-pagina .text .button button,
+.contact form button:focus {
+  outline: none;
+}
+.header-segunda-pagina .svg-down {
+  bottom: 0;
+  left: 50%;
+  z-index: 5;
+  margin-left: -96px;
+  margin-bottom: -12px;
+  color: #fff;
+}
+.header-segunda-pagina .arrow-down {
+  width: 70px;
+  height: 50px;
+  bottom: -10px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 10;
+  background: url("https://res.cloudinary.com/abdel-rahman-ali/image/upload/v1535988515/arrow-down.png")
+    no-repeat center;
+}
+/*End .header-segunda-pagina*/
+
+/*Start About-Us*/
+.about-us,
+.reservation {
+  padding: 60px;
+}
+.about-us .text,
+.reservation .text {
+  flex: 50%;
+  padding: 40px 52px 0 0;
+}
+.about-us .text h3,
+.reservation .text h3 {
+  color: black;
+}
+.about-us .text .fa-asterisk,
+.reservation .text .fa-asterisk {
+  color: #9a9998;
+}
+.about-us .image-container,
+.reservation .image-container {
+  flex: 50%;
+}
+.about-us .image,
+.reservation .image {
+  margin-left: 20px;
+}
+/*End About-Us*/
+.fotosnoticias .image-container {
+  display: flex;
+}
+
+.fotosnoticias .image-part {
+  height: 700px;
+  width: 33.33%; /* Divide the container into three parts */
+}
+
+.image-left,
+.image-right {
+  background: url("https://res.cloudinary.com/dwkb2dk5r/image/upload/v1687366299/BeFunky-collage_1_uapn81.jpg")
+    fixed center;
+  background-size: cover;
+}
+
+.image-middle {
+  background: white; /* Set the background to white */
+}
+
+/*Start fixed-image*/
+.fixed-image-ordenador {
+  background: url("https://res.cloudinary.com/dwkb2dk5r/image/upload/v1687450953/annie-spratt-FLY7CEwbJsg-unsplash_1_zptmxb.jpg")
+    fixed bottom;
+  background-size: cover;
+  height: 400px;
+}
+/*End fixed-image*/
+
+/*End Home Page*/
+
+/*Start Home Page Responsive*/
+
+@media (max-width: 1200px) {
+  .about-us,
+  .reservation {
+    padding: 60px 40px;
+  }
+  .about-us .text,
+  .reservation .text {
+    padding: 0 32px 0 0;
+  }
+  .about-us .image-container,
+  .reservation .image-container {
+    align-items: center;
+  }
+  .menu .text {
+    padding: 0 0 0 32px;
+  }
+}
+
+@media (max-width: 992px) {
+  body {
+    padding: 0;
+  }
+  .dots {
+    display: none;
+  }
+  .header-segunda-pagina {
+    height: calc(100vh - 10px);
+  }
+  .header-segunda-pagina nav .logo {
+    padding-left: 0;
+  }
+  .about-us {
+    display: block;
+    padding-top: 50px;
+  }
+  .about-us .text,
+  .reservation .text {
+    padding: 0 0 40px;
+  }
+  .about-us .image-container .image1,
+  .reservation .image-container .image1 {
+    margin-left: 0;
+  }
+
+  .menu .text {
+    padding: 20px 20px 0 0;
+  }
+  .reservation {
+    display: block;
+    padding: 30px 20px 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-segunda-pagina nav {
+    display: block;
+    text-align: center;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding-top: 25px;
+  }
+  .header-segunda-pagina nav .toggle {
+    display: block;
+  }
+  .header-segunda-pagina .navigation-bar {
+    position: fixed;
+    top: 0;
+    left: -174px;
+    height: 100%;
+    background-color: #262526;
+    overflow: hidden;
+    z-index: 20;
+    padding: 40px;
+  }
+  .header-segunda-pagina .navigation-bar ul {
+    display: block;
+    padding-top: 40px;
+  }
+  .header-segunda-pagina .navigation-bar ul li {
+    text-align: left;
+    padding: 14px 0;
+  }
+
+  .copyright ul {
+    display: block;
+    margin-top: -20px;
+  }
+  .copyright li {
+    margin-bottom: 5px;
+  }
+  .copyright li:not(:last-of-type):after {
+    content: "";
+  }
+}
+
+@media (max-width: 576px) {
+  h3,
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 90px;
+  }
+  .header-segunda-pagina {
+    padding: 0;
+  }
+  .header-segunda-pagina nav .logo {
+    padding-left: 0;
+  }
+  .header-segunda-pagina nav .toggle.active {
+    left: 36%;
+  }
+  .header-segunda-pagina .navigation-bar.show {
+    padding: 20px;
+    width: 48%;
+  }
+  .about-us,
+  .reservation {
+    padding: 60px 20px;
+  }
+  .menu {
+    padding: 60px 0 60px 20px;
+  }
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 40px, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+/*End Home Page Responsive*/
+.diagramatiempo {
+  display: flex;
+  flex-direction: column;
+}
+
+#timeline {
+  padding: 100px 0;
+  background: #f7f7f7;
+  border-top: 1px solid rgba(191, 191, 191, 0.4);
+  border-bottom: 1px solid rgba(191, 191, 191, 0.4);
+}
+
+#timeline h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 200;
+  margin-bottom: 20px;
+}
+
+#timeline p.leader {
+  text-align: center;
+  max-width: 90%;
+  margin: auto;
+  margin-bottom: 45px;
+}
+
+#timeline .demo-card-wrapper::after {
+  z-index: 1;
+  content: "";
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  border-left: 1px solid #bdbdbd;
+}
+
+.demo-card-wrapper {
+  position: relative;
+  padding: 50px 0;
+}
+
+.line {
+  position: absolute;
+  top: 0;
+  left: 47%;
+  bottom: 0;
+  width: 1px;
+  background-color: black;
+}
+
+.demo-card {
+  position: relative;
+  display: block;
+  margin: 10px auto 80px;
+  max-width: 94%;
+  z-index: 2;
+  opacity: 0;
+  transform: translate3d(-100px, 0, 0);
+  animation-fill-mode: both;
+  animation-duration: 1s;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.demo-card.visible {
+  animation-name: fade-in;
+}
+
+.demo-card .head {
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-weight: 400;
+}
+
+.demo-card .head .number-box {
+  display: inline;
+  float: left;
+  margin: 15px;
+  padding: 10px;
+  font-size: 35px;
+  line-height: 35px;
+  font-weight: 600;
+  background: rgba(0, 0, 0, 0.17);
+}
+
+.demo-card .head h2 {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: inherit;
+  letter-spacing: 1px;
+  margin: 0;
+  padding-bottom: 6px;
+  line-height: 1rem;
+}
+
+.demo-card .head h2 span {
+  display: block;
+  font-size: 0.6rem;
+  margin: 0;
+}
+
+.demo-card .body {
+  background: #fff;
+  border: 1px solid rgba(191, 191, 191, 0.4);
+  border-top: 0;
+  padding: 15px;
+}
+
+.demo-card .body p {
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 15px;
+}
+
+.demo-card .body img {
+  display: block;
+  width: 100%;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translate3d(-100px, 0, 0);
+  }
+  10% {
+    opacity: 0.1;
+    transform: translate3d(-90px, 0, 0);
+  }
+  20% {
+    opacity: 0.2;
+    transform: translate3d(-80px, 0, 0);
+  }
+  /* Agrega más puntos intermedios aquí */
+  90% {
+    opacity: 0.9;
+    transform: translate3d(-10px, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
