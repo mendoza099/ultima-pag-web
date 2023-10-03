@@ -2,10 +2,12 @@ import React, { useContext, useEffect, useRef } from "react";
 import { Context } from "../store/appContext";
 import { Link } from "react-router-dom";
 import "../../styles/noticias.css";
-import Carga from "../component/Carga.jsx";
+
 import Footer from "../component/Footer.jsx";
+
 export const Noticias = () => {
 	const cardRefs = useRef([]);
+
 	useEffect(() => {
 		const body = document.querySelector("body");
 
@@ -150,7 +152,7 @@ export const Noticias = () => {
 	}, []);
 	return (
 		<>
-			<Carga />
+
 			<div className="dots">
 				<div className="active one" data-x="header"></div>
 				<div className="two" data-x=".recipes"></div>
@@ -460,7 +462,7 @@ export const Noticias = () => {
 				<div className="text"></div>
 			</div>
 
-			<Footer />
+
 			<div className="copyright">
 				<svg
 					className="svg-up"

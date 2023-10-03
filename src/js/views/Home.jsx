@@ -2,11 +2,11 @@ import React, { useContext, useEffect } from "react";
 import { Context } from "../store/appContext";
 import { Link } from "react-router-dom";
 import "../../styles/home.css";
-import Carga from "../component/Carga.jsx";
+
 import Footer from "../component/Footer.jsx";
 import imagen1 from "/workspace/ultima-pag-web/src/img/annie-spratt-vGgn0xLdy8s-unsplash (1).jpg";
 import imagen2 from "/workspace/ultima-pag-web/src/img/ryoji-iwata-IBaVuZsJJTo-unsplash (2).jpg";
-
+import Division from "../component/Division.jsx";
 
 export const Home = () => {
 	const { store, actions } = useContext(Context);
@@ -174,7 +174,7 @@ export const Home = () => {
 	}, []);
 	return (
 		<>
-			<Carga />
+
 
 			<header className="header-primera-pagina">
 				<nav>
@@ -445,7 +445,7 @@ export const Home = () => {
 			</div>
 
 
-
+			<Division />
 
 			<Footer />
 			<div className="copyright">

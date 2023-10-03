@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useRef } from "react";
 import { Context } from "../store/appContext";
 import { Link } from "react-router-dom";
 import "../../styles/contactanos.css";
-import Carga from "../component/Carga.jsx";
+
 import Footer from "../component/Footer.jsx";
 import Card from "../component/Card.jsx";
 export const Contactanos = () => {
@@ -171,7 +171,7 @@ export const Contactanos = () => {
 
     return (
         <>
-            <Carga />
+
             <div className="dots">
                 <div className="active one" data-x="header"></div>
                 <div className="two" data-x=".recipes"></div>
